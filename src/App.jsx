@@ -13,7 +13,7 @@ const App = () => {
         <section className={style.home_getstarted}>
           <h1>Api's that makes you <span>productive</span></h1>
           <h2>Forget paid api's</h2>
-          <p>we provide free api service</p>
+          <p>we provide free api service all over the world </p>
             <h3>get started and browse free api</h3>
             <button>get started <ArrowForwardIcon/></button>
         </section>
