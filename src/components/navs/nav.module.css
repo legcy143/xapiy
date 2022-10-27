@@ -16,24 +16,37 @@
     background-color: rgba(var( --black-rgb) , 0.9);
     color: var(--font-light);
 }
+.logo img{
+    height: 2.5rem;
+}
 
 .nav_search{
     width: 40%;
     max-width: 30rem;
+    position: relative;
+    display: flex;
+    align-items: center;
+}
+.nav_search svg{
+    left: 0.3rem;
+    position: absolute;
+    color: black;
 }
 .nav_search input{
-    padding: 0.3rem;
+    padding: 0.3rem 0.3rem 0.3rem 2rem;
     font-size: 0.9rem;
     outline: none;
-    border: 2px solid transparent;
+    border: 2px solid rgba(var( --secondry-rgb) , 0.1);
     border-radius: 0.3rem;
     width: 100%;
     transition: 0.30s ease;
 }
 .nav_search input:focus{
-    border: 2px solid rgba(var( --primary-rgb) , 1);
+    border: 2px solid rgba(var( --secondry-rgb) , 0.1);
     transition: 0.30s ease;
 }
+
+
 
 .links_and_more{
     display: flex;
@@ -41,19 +54,28 @@
     gap: 1rem;
 }
 .links_and_more a{
+    padding: 0.3rem 1rem;
     color: var(--font-light);
     font-weight: 400;
     text-transform: capitalize;
+    background-color: rgba(var(--secondry-rgb) , 0.1);
+}
+.links_and_more a:hover{
+   color: rgba(var(--secondry-rgb) , 1);
 }
 .links_and_more button{
-    padding: 0.5rem 2rem;
+    padding: 0.4rem 2rem;
     border: 2px solid transparent;
-    border-radius: 0.4rem;
     background-color: rgba(var(--secondry-rgb) , 0.8);
     box-shadow: 0px 5px 15px rgba(var(--secondry-rgb) , 0.2);
-    color: var(--font-light);
+    color: var(--font-dark);
+    transition: 0.30s ease;
+    letter-spacing: 0.1px;
 }
-
+.links_and_more button:hover{
+    transition: 0.30s ease;
+    background-color: rgba(var(--secondry-rgb) ,1);
+}
 
 
 @media (max-width:700px) {
