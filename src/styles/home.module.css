@@ -1,0 +1,48 @@
+.home_container{
+    margin: 0px auto;
+    display: flex;
+    align-items: center;
+    min-height: calc(100vh - 3.5rem);
+    justify-content: center;
+    border: 2px solid red;
+    max-width: 70rem;
+}
+.home_getstarted{
+    display: grid;
+    gap: 0.6rem;
+    border: 2px solid red;
+    text-transform: capitalize;
+}
+.home_getstarted h1{
+    font-size: clamp(3rem , calc(0.5rem + 5vw) , 4.5rem);
+}
+.home_getstarted h2{
+    font-size: clamp(1.5rem , calc(0.4rem + 4vw) , 3rem);
+}
+.home_getstarted p{
+    font-size: clamp(0.9rem , calc(1rem + 1vw) , 1.2rem);
+    opacity: 0.8;
+}
+.home_getstarted h3{
+    margin-top: 1rem;
+}
+.home_btns{
+    margin: 1rem;
+    display: flex;
+    justify-content: center;
+    gap: 0.5rem;
+}
+.home_btns button{
+    padding: 0.5rem 2rem;
+    border-radius: 0.2rem;
+    background-color: red;
+    border: 2px solid red;
+    font-weight: 600;
+    font-size: 0.9rem;
+    letter-spacing: 0.5px;
+}
+@media (max-width:750px) {
+    .home_container{
+        flex-direction: column;
+    }
+}

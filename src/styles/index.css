@@ -1,0 +1,33 @@
+
+:root{
+  --font-light: rgb(231, 231, 231);
+  --black: rgb(10, 10, 10);
+  --black-rgb: 1, 1, 1;
+  --primary-color:rgb(54, 54, 54);
+  --primary-rgb: 55, 55, 55;
+  --secondry-color: rgb(38, 34, 252);
+  --secondry-rgb: 53, 50, 241;
+  --links-color: rgb(0, 89, 255);
+}
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+html{
+  scroll-behavior: smooth;
+  font-size: 16px;
+}
+body{
+  font-family: 'Roboto';
+  display: grid;
+}
+a{
+  font-weight: 700;
+  color: var(--links-color);
+  text-decoration: none;
+}
+button{
+  padding: 0.2rem;
+  cursor: pointer;
+}
